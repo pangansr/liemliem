@@ -1,0 +1,70 @@
+777777<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="c"></h1>
+    <h2 id="b"></h2>
+    <p id="a"></p>
+    <script>
+        document.getElementById('a').innerHTML = "Welcome to TDC"
+        document.write("Welcome to TDC");
+        window.alert("Welcome to TDC");
+        console.log("Welcome to TDC");
+        let fullname = prompt("Bạn tên gì?","Nguyễn Văn A");
+       // alert(fullname.lastIndexOf(' '));
+      document.getElementById('c').innerHTML ="Xin chào bạn: "+fullname.substr(fullname.lastIndexOf(' '));
+     var NhapNamSinh = prompt("Nhap nam sinh cua ban", 2023);
+     document.getElementById('b').innerHTML = 2023-NhapNamSinh;
+     
+    </script>
+      <h1 style="color: blue;">Bai4</h1>
+      <h2 id="greeting2">Tuoi cua ban la</h2>
+      <script>
+          let r = prompt("Hãy nhập bán kính", "10");
+          let dt = 3.14 * Math.pow(r, 2);
+          document.getElementById("greeting2").innerHTML = "Diện tích hình tròn là: " + dt;
+      </script>
+    <h1 style="color: blue;">Bai5</h1>
+    <h2>Chương trình tính cho bé</h2>
+    <div>
+         <span id="so1"></span> +  <span id="so2"></span> = <span><input type="text" id="kq" /></span>
+        <button onclick="xuatcauthoai()">Kiểm tra kết quả</button>
+       
+    </div>
+    <script>
+        var num1 = Math.floor(Math.random() * 11);
+        var num2 = Math.floor(Math.random() * 11);
+        document.getElementById("so1").innerHTML = num1;
+        document.getElementById("so2").innerHTML = num2;
+        function xuatcauthoai() {
+            let kq = parseInt(document.getElementById("kq").value);
+            let n1 = Math.floor(Math.random() * 3);
+            if (num1 + num2 == kq) {
+                if (n1 == 0) {
+                    alert("Giỏi quá!!");
+                } else if (n1 == 1) {
+                    alert("Thật tuyệt vời!!");
+                } else {
+                    alert("Bé thật xuất sắc!!");
+                }
+            } else {
+                if (n1 == 0) {
+                    alert("Cố hơn vào lần sau nhé!!");
+                } else if (n1 == 1) {
+                    alert("Không phải buồn!!");
+                } else {
+                    alert("Đừng nản nhé!!");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
